@@ -1,0 +1,52 @@
+<CTSIntegrator>
+	<DBESSENTIAL>
+		<DBURL>http://52.140.125.242/DBInteraction19c/NGCTSDBInteraction.asmx</DBURL>
+		<DBType>ORACLE</DBType>
+		<ConnStr>inwardstring</ConnStr>
+	</DBESSENTIAL>
+	<LOGESSENTIAL>
+		<LogAPIURL>http://52.140.125.242/LogWriterAPI/api/</LogAPIURL>
+		<LogAPIPassCode>10</LogAPIPassCode>
+		<ApplicationChannel>CTSAPPLICATION</ApplicationChannel>
+		<DestinationEmailID>maheep.chawla@newgensoft.com</DestinationEmailID>
+		<isClientDate>Y</isClientDate>
+		<LogAPIFileLevel>SERVICE</LogAPIFileLevel><!--SERVICE, PROCESS, CHANNEL, CABINET, USERNAME-->
+	</LOGESSENTIAL>
+	<DB_TO_FILE>
+	
+		<UserName>integratorDBToFile</UserName>
+		<Password>system123#</Password>
+		<CabinetName>inward</CabinetName>
+		
+		<FilePath>D:\CTS\CTSIntegrator\ITGDBToFile\Files</FilePath>
+		<ImagePath>D:\CTS\CTSIntegrator\ITGDBToFile\Images</ImagePath>
+		<DefaultPath_File>D:\CTS\CTSIntegrator\ITGDBToFile\Files</DefaultPath_File>
+		<DefaultPath_Img>D:\CTS\CTSIntegrator\ITGDBToFile\Images</DefaultPath_Img>
+		<UniqueIDField>UNIQUEID</UniqueIDField>
+		<isImageRequired>Y</isImageRequired>    <!--If img req -Y else N-->
+		<Output_CSV>N</Output_CSV>
+		<Output_XML>Y</Output_XML>
+		<Output_TXT>N</Output_TXT>
+		<Output_JSON>N</Output_JSON>
+		<ImageDetails_SRC>DB</ImageDetails_SRC>     <!--If src is Config then CONFIG if DB then DB-->
+		<ImageIndex_DBFieldName>ImageIndex</ImageIndex_DBFieldName>    <!--col name for ImageIndex-->
+	 
+		<ImageServerIP>52.140.125.242</ImageServerIP>
+		<PortID>3333</PortID>
+		<VolumeID>1</VolumeID>
+		<VolumeName>inwardvol</VolumeName>
+		<SiteName>inwardsite</SiteName>
+		<ProcessID>1</ProcessID>
+		
+		<ImageServerIP_DBFieldName>IMAGESERVERIP</ImageServerIP_DBFieldName>
+		<PortID_DBFieldName>PORTID</PortID_DBFieldName>
+		<VolumeID_DBFieldName>VOLUMEID</VolumeID_DBFieldName>
+		<VolumeName_DBFieldName>VOLUMENAME</VolumeName_DBFieldName>
+		<SiteName_DBFieldName>SITENAME</SiteName_DBFieldName>
+		<ProcessID_DBFieldName>PROCESSID</ProcessID_DBFieldName>
+		<!--<CabinetName_DBFieldName>INWARD</CabinetName_DBFieldName>-->
+		
+		<StoredProcedureName>DEMOGETCTSINTEGRATORCONFIG</StoredProcedureName>
+		<!--Option input and output parameters to be configured-->
+	</DB_TO_FILE>
+</CTSIntegrator>

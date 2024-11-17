@@ -1,0 +1,50 @@
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSIntegratorService.exe.config
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSIntegratorService.exe
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSIntegratorService.pdb
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.csprojAssemblyReference.cache
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.ProjectInstaller.resources
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.csproj.GenerateResource.cache
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.csproj.CoreCompileInputs.cache
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.exe
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.pdb
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSLibrary.dll
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSWrapper.dll
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\bin\Debug\Jtswrapper.dll
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\bin\Debug\ADODB.dll
+D:\.NET Core App\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.csproj.CopyComplete
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.csprojAssemblyReference.cache
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.ProjectInstaller.resources
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.csproj.GenerateResource.cache
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.csproj.CoreCompileInputs.cache
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.exe
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.pdb
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSIntegratorService.exe.config
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSIntegratorService.exe
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSIntegratorService.pdb
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSLibrary.dll
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSWrapper.dll
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\bin\Debug\Jtswrapper.dll
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\bin\Debug\ADODB.dll
+D:\Newgen Projects\ASD Project\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.csproj.CopyComplete
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSIntegratorService.exe.config
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSIntegratorService.exe
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSIntegratorService.pdb
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSLibrary.dll
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\bin\Debug\CTSWrapper.dll
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\bin\Debug\Jtswrapper.dll
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\bin\Debug\ADODB.dll
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.ProjectInstaller.resources
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.csproj.GenerateResource.cache
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.csproj.CoreCompileInputs.cache
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.csproj.CopyComplete
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.exe
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.pdb
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\bin\Debug\Newtonsoft.Json.Bson.dll
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\bin\Debug\Newtonsoft.Json.dll
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\bin\Debug\Newtonsoft.Json.pdb
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\bin\Debug\Newtonsoft.Json.xml
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\bin\Debug\Newtonsoft.Json.Bson.pdb
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\bin\Debug\Newtonsoft.Json.Bson.xml
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.exe.config
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.csproj.AssemblyReference.cache
+D:\Newgen Projects\NG-2022-08272-CTS-Enhancement\Working\Maheep\CTSIntegratorService\CTSIntegratorService\obj\Debug\CTSIntegratorService.csproj.SuggestedBindingRedirects.cache
