@@ -1,0 +1,47 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main  # Adjust if using a different branch
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  ACR_NAME: 'dccloudmaheepacr'
+  IMAGE_NAME: 'devopsimg'
+  IMAGE_TAG: 'latest'
+  RESOURCE_GROUP: 'DevOps'
+  WEB_APP_NAME: 'dccloudmaheepwebapp'
+  AZURE_SERVICE_CONNECTION: 'AzureServiceConnection'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '16.x'  # Adjust Node.js version if needed
+  displayName: 'Install Node.js'
+
+- script: |
+    cd "ToDoList App"
+    npm install
+  displayName: 'Install Dependencies'
+
+- task: Docker@2
+  displayName: 'Build and Push Docker Image to ACR'
+  inputs:
+    command: 'buildAndPush'
+    repository: '$(ACR_NAME).azurecr.io/$(IMAGE_NAME)'
+    dockerfile: 'ToDoList App/Dockerfile'
+    containerRegistry: '$(AZURE_SERVICE_CONNECTION)'
+    tags: '$(IMAGE_TAG)'
+
+- task: AzureWebAppContainer@1
+  displayName: 'Deploy to Azure Web App'
+  inputs:
+    azureSubscription: '$(AZURE_SERVICE_CONNECTION)'
+    appName: '$(WEB_APP_NAME)'
+    containers: '$(ACR_NAME).azurecr.io/$(IMAGE_NAME):$(IMAGE_TAG)'
+
+
