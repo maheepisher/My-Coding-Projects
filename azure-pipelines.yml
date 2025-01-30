@@ -4,44 +4,14 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+- main 
 
 pool:
-  vmImage: 'ubuntu-latest'
-
-variables:
-  ACR_NAME: 'dccloudmaheepacr'
-  IMAGE_NAME: 'devopsimg'
-  IMAGE_TAG: 'latest'
-  RESOURCE_GROUP: 'DevOps'
-  WEB_APP_NAME: 'dccloudmaheepwebapp'
-  AZURE_SERVICE_CONNECTION: 'AzureRMServiceConnection'
+  name: 'Default'
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '16.x'  # Adjust Node.js version if needed
-  displayName: 'Install Node.js'
-
-- script: |
-    cd "ToDoList App"
-    npm install
-  displayName: 'Install Dependencies'
-
-- task: AzureCLI@2
-  displayName: 'Login to Azure and Build & Push Docker Image'
-  inputs:
-    azureSubscription: '$(AZURE_SERVICE_CONNECTION)'
-    scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: |
-      az acr login --name $(ACR_NAME)
-      az acr build --registry $(ACR_NAME) --image $(IMAGE_NAME):$(IMAGE_TAG) "ToDoList App/"
-
 - task: AzureWebAppContainer@1
-  displayName: 'Deploy to Azure Web App'
   inputs:
-    azureSubscription: '$(AZURE_SERVICE_CONNECTION)'
-    appName: '$(WEB_APP_NAME)'
-    containers: '$(ACR_NAME).azurecr.io/$(IMAGE_NAME):$(IMAGE_TAG)'
-
+    azureSubscription: 'AzureRMServiceConnection' 
+    appName: 'dccloudmaheepwebapp' 
+    containers: 'dccloudmaheepacr.azurecr.io/devopsimg:latest' 
