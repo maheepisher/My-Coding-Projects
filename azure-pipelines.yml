@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- main  # Adjust if using a different branch
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -15,7 +15,7 @@ variables:
   IMAGE_TAG: 'latest'
   RESOURCE_GROUP: 'DevOps'
   WEB_APP_NAME: 'dccloudmaheepwebapp'
-  AZURE_SERVICE_CONNECTION: 'AzureServiceConnection'
+  AZURE_SERVICE_CONNECTION: 'AzureRMServiceConnection'
 
 steps:
 - task: NodeTool@0
@@ -28,14 +28,15 @@ steps:
     npm install
   displayName: 'Install Dependencies'
 
-- task: Docker@2
-  displayName: 'Build and Push Docker Image to ACR'
+- task: AzureCLI@2
+  displayName: 'Login to Azure and Build & Push Docker Image'
   inputs:
-    command: 'buildAndPush'
-    repository: '$(ACR_NAME).azurecr.io/$(IMAGE_NAME)'
-    dockerfile: 'ToDoList App/Dockerfile'
-    containerRegistry: '$(AZURE_SERVICE_CONNECTION)'
-    tags: '$(IMAGE_TAG)'
+    azureSubscription: '$(AZURE_SERVICE_CONNECTION)'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az acr login --name $(ACR_NAME)
+      az acr build --registry $(ACR_NAME) --image $(IMAGE_NAME):$(IMAGE_TAG) "ToDoList App/"
 
 - task: AzureWebAppContainer@1
   displayName: 'Deploy to Azure Web App'
@@ -43,5 +44,4 @@ steps:
     azureSubscription: '$(AZURE_SERVICE_CONNECTION)'
     appName: '$(WEB_APP_NAME)'
     containers: '$(ACR_NAME).azurecr.io/$(IMAGE_NAME):$(IMAGE_TAG)'
-
 
